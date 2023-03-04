@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "name": "Find the perfect car",
+    "image": "../public/images/map.png",
+    "alt": "CARD1",
+    "description": "Browse too many cars shared by owners based on and date and city."
+},
+{
+    "id": 2,
+    "name": "Rent your Car",
+    "image": "../public/images/rent.png",
+    "alt": "CARD1",
+    "description": "Book on Elite Car rental and you will have damage protection insurance by default."
+},
+{
+    "id": 3,
+    "name": "Time to Hit the road",
+    "image": "../public/images/hit.png",
+    "alt": "CARD1",
+    "description": "Pick it up you car from the owner's location. Ready to travel."
+}
+]
