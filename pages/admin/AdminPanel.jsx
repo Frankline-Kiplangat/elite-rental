@@ -124,3 +124,4 @@ function AdminPanel() {
 }
 
 export default PrivateRoute(AdminPanel);
+

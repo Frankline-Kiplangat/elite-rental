@@ -9,7 +9,10 @@ import { useAuth } from "../../contexts/AuthContext";
 import logo from "../../public/images/logo1.jpeg";
 import WarningModel from "../modals/WarningModal";
 import Menu from "./Menu";
-     
+// import { db } from "../../firebase_config";
+// import { useCar } from "../../contexts/CarContext";
+// import { getDocs, collection } from "firebase/firestore";
+       
 function Nav({ placeholder }) {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -18,7 +21,15 @@ function Nav({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
   const router = useRouter();
   const { currentUser } = useAuth();
+  //const [allCars, setAllCars] = useState([]);
+  //  const { fetchData } = useCar();
+  //const [isLoading, setIsLoading] = useState(true);
 
+  // useEffect(() => {
+  //   fetchData(setAllCars);
+  // }, []);
+
+  //console.log(allCars);
 
   const dateRange = {
     startDate: startDate,
@@ -42,7 +53,9 @@ function Nav({ placeholder }) {
     // if (currentUser) {
       /* search input validation */
       if (searchInput?.length > 2 && searchInput?.charAt(0) != " ") {
+        /* Date must be greater than today's date */
         if (startDate && endDate >= new Date()) {
+          /* Check the cities */
           if (
             searchInput?.toLowerCase() === "Nairobi" ||
             searchInput?.toLowerCase() === "Kisumu" ||
@@ -65,14 +78,17 @@ function Nav({ placeholder }) {
             router.push("/NotFound");
           }
         } else {
-          setOpen(true); 
+          setOpen(true); // WARNING MODAL
           setWarningContent("Date must be greater than today's date.");
         }
       } else {
-        setOpen(true); 
+        setOpen(true); // WARNING MODAL
         setWarningContent("Please enter a valid city.");
       }
- 
+    // } else {
+    //   setOpen(true); // WARNING MODAL
+    //   setWarningContent("Please sign in or register to continue.");
+    // }
   };
 
   return (

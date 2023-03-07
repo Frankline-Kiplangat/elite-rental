@@ -32,6 +32,7 @@ export default function Home() {
         <HowItWorks />
         <About />
         <LocationSection />
+        <PopularCars />
       </main>
 
       <footer>

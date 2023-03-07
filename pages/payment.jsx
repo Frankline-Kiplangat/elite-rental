@@ -242,7 +242,7 @@ function payment() {
                     <div className="mt-8">
                       <div className="flex justify-between items-center">
                         <div className="text-sm font-bold text-gray-700 tracking-wide">
-                          Driving Licence No.
+                          Driving Licence No
                         </div>
                       </div>
                       <input
@@ -278,7 +278,7 @@ function payment() {
                     <div className="mt-8">
                       <div className="flex justify-between items-center">
                         <div className="text-sm font-bold text-gray-700 tracking-wide">
-                          Card Number
+                          Card Code
                         </div>
                       </div>
                       <input

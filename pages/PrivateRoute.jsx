@@ -15,6 +15,7 @@ const PrivateRoute = (Component) => {
      return currentUser ? <Component {...props} /> : router.pathname.includes('admin') ? <AdminLogin />: <LoginPage />;
   };
 
+  // Copy getInitial props so it will run as well
   if (Component.getInitialProps) {
     Auth.getInitialProps = Component.getInitialProps;
   }

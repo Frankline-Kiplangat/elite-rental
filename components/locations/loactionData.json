@@ -1,0 +1,19 @@
+[{
+        "country": "Kenya",
+        "city": "Nairobi",
+        "image": "/images/nai.jpeg",
+        "alt": "Nairobi Image"
+    },
+    {
+        "country": "Kenya",
+        "city": "Kisumu",
+        "image": "/images/kism.jpeg",
+        "alt": "Kisumu Image"
+    },
+    {
+        "country": "Kenya",
+        "city": "Nakuru",
+        "image": "/images/naks.jpeg",
+        "alt": "Nakuru Image"
+    }
+]

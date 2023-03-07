@@ -36,6 +36,19 @@ function LoginPage() {
       <Nav />
       <div className="lg:flex">
         <div className="lg:w-1/2 xl:max-w-screen-md">
+          {/* <div
+            className="py-12 bg-indigo-100 lg:bg-white flex justify-center 
+              lg:justify-start lg:px-12"
+          >
+            <div
+              className="cursor-pointer flex items-center"
+              onClick={() => router.push("/")}
+            >
+              <div className="text-2xl text-blue-600 tracking-wide ml-2 font-semibold">
+                Travel Book
+              </div>
+            </div>
+          </div> */}
 
           {loginErrMsg && (
             <div role="alert">
