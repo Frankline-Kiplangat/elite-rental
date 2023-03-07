@@ -1,56 +1,70 @@
-# Vehicle Network 
-### P2P Car renting system | Rent a car from the owner
--------------
-### WEBSITE : https://vehicle-network.vercel.app
- 
- 
-#### App features :
-- [x] Rent a Car 
-- [x] Search and List Rental Cars
-- [x] User Authentication
-- [x] Car Filtering
-- [x] Update and delete your car
-- [x] Mapbox integration, see nearest cars on the map
-- [x] Like cars
-- [x] Popular cars
-- [x] Contact via email.js 
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Technologies
+## Available Scripts
 
-Front-End | Back-End | Database
------------- | ------------- | -------------
-React.js | Next.js | Firebase
-Tailwind CSS |        | Local Storage
-MapBox |        |
-geolib |   |
-Email.js |         | 
-react-map-gl |        | 
-Context API |        |    
+In the project directory, you can run:
 
-### Website Images
+### `npm start`
 
-![1](https://user-images.githubusercontent.com/59448862/168886146-9ec9db63-44ee-4b65-bbc3-aece217759db.png)
-![searc_improved](https://user-images.githubusercontent.com/59448862/168886154-d266b400-c67e-4a60-a6b3-11522050e507.png)
-![11](https://user-images.githubusercontent.com/59448862/168886158-107aa171-1714-43b9-ad49-274801ddaaf1.png)
-![13](https://user-images.githubusercontent.com/59448862/168886162-5df673ed-5403-4947-98d9-bcad5f9f69e5.png)
-![car_details](https://user-images.githubusercontent.com/59448862/168886164-b4bde2f8-c053-4d32-bc8b-3456464fa73b.png)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
- 
-##  Installation and Setup Instructions
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Example:
-Clone down this repository. You will need node and npm installed globally on your machine. Additionally, please
-get your own firebase and Mapbox user credentials.
+### `npm test`
 
-### Installation:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```npm install```
+### `npm run build`
 
-#### To Start Server:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```npm run dev```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### To Visit App:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```localhost:3000```
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
