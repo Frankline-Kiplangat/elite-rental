@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
 import contactImg from "../public/images/contact.png";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { useAuth } from "../contexts/AuthContext";
 import { useCar } from "../contexts/CarContext";
 import { db } from "../firebase_config";
 
 function contact() {
   const [emailSent, setEmailSent] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  const [, setErrorMessage] = useState("");
   const { user } = useAuth();
   const [inputEmail, setInputEmail] = useState("");
   const [inputName, setInputName] = useState("");
@@ -56,28 +56,13 @@ function contact() {
           }
           notifySuccess(" We received your message.!");
         },
-        (error) => {
-          setErrorMessage("Something went wrong.Please try again later.");
-          console.log(error.text);
-          notifyError();
-        }
+
       );
 
     e.target.reset();
 
     setEmailSent(!emailSent);
   }
-
-  const notifyError = () =>
-    toast.info("Something went wrong!", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
 
   return (
     <div>
@@ -101,23 +86,7 @@ function contact() {
               </div>
             </div>
           )}
-          {errorMessage && (
-            <div role="alert">
-              <div className="flex justify-center align-middle m-2">
-                <div className="w-2/3 ">
-                  <div className="bg-blue-500 text-white font-bold rounded-t px-4 py-2">
-                    Something went wrong.
-                  </div>
-                  <div
-                    className="border border-t-0 border-blue-400 rounded-b 
-                        bg-blue-100 px-4 py-3 text-blue-700 "
-                  >
-                    <p> {errorMessage}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+  
 
           <div className="mt-4 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-10 xl:px-24 xl:max-w-2xl">
             <h2

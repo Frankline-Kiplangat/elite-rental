@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/dist/client/router";
-import notFound from "../public/images/notFound_404Page.png";
 import Image from "next/image";
 
 export function CityButton({ city }) {
@@ -99,7 +98,6 @@ function NotFound() {
               </div>
             </div>
             <div className="m-1 hidden md:flex justify-center align-center text-center">
-              <Image src={notFound} width={450} height={600} alt="NOT FOUND" />
             </div>
           </div>
         </div>
