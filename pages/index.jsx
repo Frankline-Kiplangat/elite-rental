@@ -6,7 +6,7 @@ import HowItWorks from "../components/about/HowItWorks";
 import About from "../components/about/About";
 import LocationSection from "../components/locations/LocationSection";
 import Link from "next/link";
-import PopularCars from "../components/popularCars/PopularCars";
+// import PopularCars from "../components/popularCars/PopularCars";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <title>ELite Car Rental</title>
         <meta
           name="description"
-          content="Vehicle Network is a car renting system between users."
+          content="Elite Car Rental is a car renting system between users."
         />
         <Link rel="preconnect" href="https://fonts.googleapis.com" />
         <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +32,7 @@ export default function Home() {
         <HowItWorks />
         <About />
         <LocationSection />
-        <PopularCars />
+        {/* <PopularCars /> */}
       </main>
 
       <footer>
